@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Test</title>
+    <link rel="stylesheet" href="public/css/main.css">
+    <script src="public/js/index.js"></script>
+
+    <!-- template -->
+    <script id="popup-template" type="text/template">
+        <div class="popup-content">
+            <div class="title">
+                <h1><%- title %></h1>
+            </div>
+            <div class="content">
+                <%- content %>
+            </div>
+            <div class="popup-close">&times;</div>
+        </div>
+    </script>
+
+</head>
+<body>
+<div class="container">
+
+    <div id="tabsection">
+        <h1>Tabs</h1>
+
+        <div class="nav">
+            <ul>
+                <li class="tab1">
+                    <a href="#section1" class="tabstyle on">Tab 1</a>
+                </li>
+                <li class="tab2">
+                    <a href="#section2" class="tabstyle">Tab 2</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contents">
+
+            <div class="section" id="section1" style="display: block;">
+                <h2>Tab 1</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                    pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                    tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                    dapibus in, viverra quis, feugiat a, tellus.</p>
+
+                <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
+                    nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,
+                    tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+                    Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                    tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet
+                    orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales
+                    sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+            </div>
+
+            <div class="section" id="section2" style="display: none;">
+                <h2>Tab 2</h2>
+
+                <form id="data">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <input type="text" class="form-control" id="title" name="title"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Content:</label>
+                        <input type="text" class="form-control" id="content" name="content"/>
+                    </div>
+                    <input type="button" id="popup-button" value="Show popup" class="btn btn-default"/>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
